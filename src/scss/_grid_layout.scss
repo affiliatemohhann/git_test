@@ -1,0 +1,35 @@
+
+.wrt-row{
+    display: grid;
+}
+.wrt-grd2-sdbr {  
+    display: grid;
+    grid-template-columns: auto 300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+.wrt-cols-2{
+    grid-template-columns: 75%  auto;
+    gap:12px;
+}
+.wrt-clm-2 {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.wrt-clm-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.wrt-clm-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+

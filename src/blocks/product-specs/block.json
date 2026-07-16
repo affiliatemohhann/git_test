@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "worthio/product-specs",
+	"version": "0.1.0",
+	"title": "Product Specifications",
+	"category": "widgets",	
+	"icon": "welcome-view-site",
+	"description": "Product Key Specifications",
+	"example": {},
+	"attributes": {
+        "message": {
+            "type": "string",          
+            "default": "Product Key Specifications using for final key spec block working here"
+        }
+    },
+	"supports": {
+		"html": false
+	},
+	"textdomain": "worthio",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
+

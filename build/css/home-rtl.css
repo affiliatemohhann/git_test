@@ -1,0 +1,219 @@
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/scss/home.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+.btn-lg {
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 32px;
+  font-size: 18px;
+}
+
+.btn-md {
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px 24px;
+  font-size: 16px;
+}
+
+.btn-sm {
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 4px 16px;
+  font-size: 13px;
+}
+
+.btn-lnk {
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 24px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.strthdlnk {
+  z-index: 1;
+}
+
+.strthdlnk:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-sctn {
+  padding: 16px 0;
+}
+
+.hero-sctn h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.hero-sctn .revw-blk {
+  position: relative;
+  background-color: #30365e;
+  border-radius: 8px;
+}
+
+.hero-sctn .revw-blk img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.hero-sctn .revw-blk .revw-blk-cntnt {
+  padding: 16px;
+}
+
+.hero-sctn .revw-blk .revw-blk-cntnt .prod-dtls {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-sctn .revw-blk .revw-blk-cntnt .prod-dtls h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.hero-sctn .revw-blk .revw-blk-cntnt .prod-dtls p {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.sctn {
+  padding: 24px 0;
+}
+
+.sctn h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.blk-undr-prc {
+  padding: 16px;
+  background-color: #eceff5;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 12px;
+}
+
+.blk-undr-prc .catg-img {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #e7eaf1;
+}
+
+.blk-undr-prc .catg-img img {
+  height: 90px;
+  width: auto;
+}
+
+.blk-undr-prc .catg-dtls h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.blk-undr-prc .catg-dtls ul {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+}
+
+.blk-undr-prc .catg-dtls li a {
+  background-color: #fff;
+  border: 1px solid #e7eaf1;
+  width: 100%;
+  min-width: 160px;
+  display: inline-block;
+  border-radius: 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #282933;
+  padding: 7px 24px;
+}
+
+.blk-undr-prc .btn-see-all {
+  font-size: 15px;
+  text-decoration: none;
+  color: #ef6f29;
+}
+
+.product-tabs .tab-panel {
+  display: none;
+}
+
+.product-tabs .tab-panel.active {
+  display: block;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tab-btn {
+  background: #d7dae0;
+  color: #111827;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab-btn:hover {
+  background: #ccd8f1;
+}
+
+.tab-btn.active {
+  background: #111827;
+  color: #fff;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  min-height: 180px;
+  padding-bottom: 24px;
+}
+
+.products-grid .product-card {
+  position: relative;
+  text-align: center;
+}
+
+.products-grid .product-card a {
+  display: block;
+  text-decoration: none;
+}
+
+.products-grid .product-card a img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.products-grid .product-card a h3 {
+  font-size: 20px;
+  color: #282933;
+  margin-top: 8px;
+}

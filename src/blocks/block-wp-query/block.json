@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpblocks/block-wp-query",
+	"version": "0.1.0",
+	"title": "WP Query Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "WP Query Block for displaying WordPress queries",
+	"example": {},
+	"attributes": {
+        "qrmessage": {
+            "type": "string",          
+            "default": "WP Query Block"
+        }
+    },
+	"supports": {
+		"html": false
+	},
+	"textdomain": "worthio",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

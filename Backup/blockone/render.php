@@ -1,0 +1,8 @@
+<?php
+/**
+ * PHP file to use when rendering the block type on the server to show on the front end.
+ */
+?>
+<p <?php echo get_block_wrapper_attributes(); ?>>
+	<h2><?php echo esc_html( $attributes['message'] ); ?></h2>
+</p>

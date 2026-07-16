@@ -1,0 +1,25 @@
+//@import './theme_styles.scss';
+
+/* Ensure the swiper doesn't expand beyond its parent */
+.product-category-swiper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Force slides to have a specific size before JS kicks in */
+.swiper-slide {
+    height: auto;
+ 
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Important for the inner card */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,167 @@
+@import './variables';
+//Hero Section
+.hero-sctn {
+  padding: 16px 0;
+
+  h2{
+    font-size: $text_lg_hdng;  
+    margin-bottom: 12px;
+  }
+  .revw-blk{  
+    position: relative;
+    background-color: $bg-blue;
+    border-radius: $br-md;
+    img{
+      border-top-left-radius: $br-md;
+      border-top-right-radius: $br-md;
+    }
+
+    .revw-blk-cntnt{
+      padding: $spacing-md;
+     
+      .prod-dtls{
+        text-decoration: none;
+        color:$text-white;
+        h4{
+          font-size: $txt-h4;        
+          color:$text_white;
+          margin-bottom: 6px;
+       
+        }
+        p{
+          font-size: $text_read;        
+          color:$text_white; 
+          margin-bottom: $spacing-none;       
+        }       
+      }
+
+    }
+  }
+}
+.sctn{
+  padding: $sctn-pdng;
+  h2 {
+    font-size: $txt-h2;
+    margin-bottom: $spacing-md;
+  }
+}
+.blk-undr-prc{
+  padding: $spacing-md;
+  background-color: $bg-light2;
+  border-radius: $br-md;
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: $spacing-sm;
+
+  .catg-img{
+    background-color: $bg-white;
+    padding: $spacing-md;
+    border-radius: $br-sm;
+    border:1px solid #e7eaf1;
+    img{
+     height: 90px;
+      width: auto;
+    }
+  }
+  .catg-dtls{
+    h4{
+      font-size: $txt-h4;
+      margin-bottom: $spacing-sm;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: $spacing-none;
+    }
+    li a{
+      background-color: $bg-white;     
+      border:1px solid #e7eaf1;    
+      width: $width-100;
+      min-width: 160px;
+      display: inline-block;
+      border-radius: $br-ful;
+      text-align: center;
+      text-decoration: none;
+      font-size: $text_read;
+      color: $text_dark;
+      padding: 7px $spacing-lg;
+    }
+  }
+  .btn-see-all{
+    font-size: $text_read;
+    text-decoration: none;
+    color: $wrt_primary_bg;
+  }
+
+}
+
+// Dynamic Tabs
+.product-tabs {
+    .tab-panel {
+    display: none;
+  }
+}
+
+.product-tabs {
+  .tab-panel.active {
+  display: block;
+}
+}
+
+ .tabs-nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.tab-btn {
+  background: #d7dae0;
+  color: #111827;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: $br-sm;
+}
+  .tab-btn:hover{
+     background: #ccd8f1;
+  }
+
+.tab-btn.active {
+  background: #111827;
+  color: #fff;
+}
+
+// Tabs Content
+.products-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-md;
+  min-height: 180px;
+  padding-bottom: $spacing-lg;
+  
+
+  .product-card{
+    position: relative;
+    text-align: center;
+    
+    a{
+      display: block;
+       text-decoration: none;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $br-sm;        
+      }
+      h3{
+        font-size: $txt-h4;
+        color: $text-dark;
+        margin-top: 8px;
+       
+      }
+    }
+  }
+
+}

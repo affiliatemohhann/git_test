@@ -1,0 +1,61 @@
+@use '../../scss/bootstrap.scss';
+
+.worthio-product-hero-block {
+	display: grid;
+	grid-template-columns: minmax(220px, 360px) 1fr;
+	gap: 20px;
+	padding: 20px;
+	border: 1px solid #e6e6e6;
+	border-radius: 12px;
+	background: #fff;
+
+	.hero-media img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 10px;
+	}
+
+	.hero-title {
+		margin: 0 0 10px;
+		font-size: 1.6rem;
+		line-height: 1.2;
+	}
+
+	.hero-meta {
+		display: flex;
+		gap: 12px;
+		margin-bottom: 12px;
+		font-weight: 600;
+	}
+
+	.hero-score {
+		color: #0b7a3b;
+	}
+
+	.hero-price {
+		color: #1a3dd9;
+	}
+
+	.hero-specs {
+		margin: 0 0 14px 18px;
+		padding: 0;
+	}
+
+	.hero-cta {
+		display: inline-block;
+		padding: 10px 16px;
+		border-radius: 8px;
+		background: #111;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+	}
+}
+
+@media (max-width: 768px) {
+	.worthio-product-hero-block {
+		grid-template-columns: 1fr;
+	}
+}
+

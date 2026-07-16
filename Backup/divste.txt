@@ -1,0 +1,227 @@
+<div>
+    <div class="p-2 border">
+        <div class="wrapper">
+            <header>Header</header>
+            <div class="main-content">
+                <h6>Main</h6>
+                <div class=""><h4>Three Column</h4></div>
+                <div class="grd-clm-3 mb-4">
+                    <div class="grd-itm">ONE</div>
+                    <div class="grd-itm">TWO</div>
+                    <div class="grd-itm">THREE</div>
+                    <div class="grd-itm">FOUR</div>
+                    <div class="grd-itm">FIVE</div>
+                    <div class="grd-itm">SIX</div>
+                    <div class="grd-itm">SEVEN</div>
+                    <div class="grd-itm">EIGHT</div>
+                    <div class="grd-itm">NINE</div>
+                    <div class="grd-itm">TEN</div>
+                    <div class="grd-itm">ELEVEN</div>
+                    <div class="grd-itm">TWELVE</div>
+                </div>
+
+            </div>
+            <aside>
+               <div class="p-3">
+                    <h4>Sidebar</h4>
+               </div>
+             </aside>
+            <footer></footer>
+        </div>
+
+    </div>
+    <div class=""><h4>Main Sidebar</h4></div>
+    <div class="grd-2-sdbr mb-4">
+        <div class="grd-itm">Main </div>
+        <div class="grd-itm">Sidebar</div>
+    </div>
+
+    <div class=""><h4>Two Column</h4></div>
+    <div class="grd-clm-2 mb-4">
+        <div class="grd-itm">ONE</div>
+        <div class="grd-itm">TWO</div>
+        <div class="grd-itm">THREE</div>
+        <div class="grd-itm">FOUR</div>
+        <div class="grd-itm">FIVE</div>
+        <div class="grd-itm">SIX</div>
+        <div class="grd-itm">SEVEN</div>
+        <div class="grd-itm">EIGHT</div>
+        <div class="grd-itm">NINE</div>
+        <div class="grd-itm">TEN</div>
+        <div class="grd-itm">ELEVEN</div>
+        <div class="grd-itm">TWELVE</div>
+    </div>
+    <div class=""><h4>Three Column</h4></div>
+    <div class="grd-clm-3 mb-4">
+        <div class="grd-itm">ONE</div>
+        <div class="grd-itm">TWO</div>
+        <div class="grd-itm">THREE</div>
+        <div class="grd-itm">FOUR</div>
+        <div class="grd-itm">FIVE</div>
+        <div class="grd-itm">SIX</div>
+        <div class="grd-itm">SEVEN</div>
+        <div class="grd-itm">EIGHT</div>
+        <div class="grd-itm">NINE</div>
+        <div class="grd-itm">TEN</div>
+        <div class="grd-itm">ELEVEN</div>
+        <div class="grd-itm">TWELVE</div>
+    </div>
+    <div class=""><h4>Four Column</h4></div>
+    <div class="grd-clm-4 mt-4">
+        <div class="grd-itm">ONE</div>
+        <div class="grd-itm">TWO</div>
+        <div class="grd-itm">THREE</div>
+        <div class="grd-itm">FOUR</div>
+        <div class="grd-itm">FIVE</div>
+        <div class="grd-itm">SIX</div>
+        <div class="grd-itm">SEVEN</div>
+        <div class="grd-itm">EIGHT</div>
+        <div class="grd-itm">NINE</div>
+        <div class="grd-itm">TEN</div>
+        <div class="grd-itm">ELEVEN</div>
+        <div class="grd-itm">TWELVE</div>
+    </div>
+    <div class=""><h4>Four Column</h4></div>
+    <div class="grd-clm-4">
+        <div class="grd-itm">
+            Sample
+            <p>text</p>
+        </div>
+        <div class="grd-itm">
+            <div class="ftrlst">
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grd-itm">
+            <div class="ftrlst">
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grd-itm">
+            <div class="ftrlst">
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">One</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+-----------------------------------------------------------------------------------------------
+body {
+}
+.wrapper {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header  header"
+        "content sidebar"
+        "footer  footer";
+}
+header {
+    grid-area: header;
+    background-color: #eee;
+    padding: 20px;
+}
+.main-content {
+    grid-area: content;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #eee;
+}
+footer {
+    padding: 20px;
+    grid-area: footer;
+    background-color: #eee;
+}
+
+.grd-clm-2 {
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+}
+
+.grd-clm-3 {
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grd-clm-4 {
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grd-2-sdbr {
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 300px;
+}
+
+.grd-itm {
+    background-color: #eee;
+    color: #424453;
+    padding: 1rem;
+   /* height: 4rem;*/
+}
+
+
+.ftrlst{
+    position:relative
+}
+.ftrlst ul {
+    list-style:none;
+    padding-left:0;
+}
+
+    .ftrlst ul li a{
+      text-decoration:none;
+      font-size:14px;
+    }
+
+
+@media (max-width:960px) {
+    .wrapper {
+        grid-template-columns: 4fr;
+        grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+    }
+}
+\
+.ftr-social-lnks{
+            padding: 8px 15px;
+            .lnks{
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                .lnk{
+                    color:white
+                }
+            }
+       }

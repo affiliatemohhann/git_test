@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpblocks/blockreactest",
+	"version": "0.1.0",
+	"title": "React Test",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block React Testing from block folder",
+	"example": {},
+	"attributes": {
+        "message": {
+            "type": "string",          
+            "default": "Block default text from attributes default key"
+        }
+    },
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blockone",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

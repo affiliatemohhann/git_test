@@ -1,0 +1,44 @@
+{
+	"name": "worthio",
+	"version": "0.1.0",
+	"description": "worthio",
+	"author": "The WordPress Contributors",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --blocks-manifest",
+		"start": "wp-scripts start --blocks-manifest",
+		"manifest": "wp-scripts build-blocks-manifest --input=build/blocks",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"dependencies": {
+		"@wordpress/api-fetch": "^7.37.0",
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/i18n": "latest",
+		"bootstrap": "^5.3.8",
+		"classnames": "^2.5.1",
+		"dompurify": "^3.3.1"
+	},
+	"devDependencies": {
+		"@wordpress/components": "^31.0.0",
+		"@wordpress/data": "^10.37.0",
+		"@wordpress/dependency-extraction-webpack-plugin": "^6.37.0",
+		"@wordpress/dom-ready": "^4.37.0",
+		"@wordpress/element": "^6.37.0",
+		"@wordpress/eslint-plugin": "^23.0.0",
+		"@wordpress/hooks": "^4.37.0",
+		"@wordpress/scripts": "^31.2.0",
+		"autoprefixer": "^10.4.23",
+		"dotenv": "^17.2.3",
+		"glob": "^13.0.0",
+		"glob-all": "^3.3.1",
+		"mini-css-extract-plugin": "^2.9.4",
+		"playwright-bdd": "^8.4.2",
+		"purgecss-webpack-plugin": "^7.0.2",
+		"sass": "^1.97.2"
+	}
+}

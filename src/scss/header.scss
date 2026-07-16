@@ -1,0 +1,106 @@
+@import './variables';
+.wrt-hdr {
+    padding: 15px 0;
+
+    .hdr-bar {
+        display: grid;
+        grid-template-columns: 100px auto 200px;
+        padding-bottom: 8px;
+
+        .custom-logo {
+            max-width: 50px;
+            height: auto;
+        }
+        .wrt-srch {
+            position: relative;
+            padding: 6px;
+
+            .search-form {
+                display: flex;
+                width: 100%;
+                max-width: 660px;
+                margin: 0 auto;
+
+                label {
+                   width: 100%;
+                }
+                .search-field {
+                    background: #EEEEEE;
+                    color: #212121;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    line-height: 2;
+                    padding: 6px 20px;
+                    border: 0;
+                    outline: none;
+                    border-radius: 50px 0 0 50px;
+                    width: 100%;
+                    font-weight: 500;
+                }
+                .search-submit {
+                    background: $wrt_primary_bg;
+                    color: #FFFFFF;
+                    vertical-align: middle;
+                    padding: 0 20px;
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 0 50px 50px 0;
+                }
+            }
+        }
+
+        .hdr-social-icons {
+           padding:8px 15px;          
+           .scl-lnks{
+            display: flex;
+            list-style-type: none;
+            li{
+                width: 32px;
+                height: 32px;
+                margin-right: 12px;
+                line-height: 32px;
+
+                a{ text-decoration: none}
+
+                 a i {
+                text-decoration: none;
+                margin-right: 15px;
+                width: 32px;
+                height: 32px;
+                display: block;
+                border-radius: 50px;
+                background-color: #eee;
+                text-align: center;
+                line-height: 32px;
+                color: #444;
+               
+                }
+            }           
+       }
+           
+    }
+}
+
+    .main-nav-bg{
+        background-color: $wrt_primary_bg;
+    }
+    .wrt-main-nav{        
+        border-radius: 8px;
+
+        .navbar{
+            padding: 5px 15px;
+
+            .navbar-nav{
+                position: relative;
+
+                .nav-link{
+                    color:#fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+}

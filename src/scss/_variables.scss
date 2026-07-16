@@ -1,0 +1,122 @@
+// Global Variables.
+$is-editor: false !default;
+
+// Breakpoints
+$sm: 767px;
+$md: 1024px;
+$lg: 1280px;
+$xl: 1536px;
+
+$wrt_primary_bg: #ef6f29;
+$wrt_max_w: 1280px;
+
+// Container Width
+$wrt_container_w: 1280px;
+
+//Background-colors
+$bg-blue:#30365e;
+$bg-light2: #eceff5;
+$bg-white:#fff;
+
+//Text Color
+$text_dark:#282933; 
+$text_md_dark:#464753; 
+$text_md_lgt:#676873; 
+$text-white:#fff;
+
+// Text Sizes
+$text_lg_hdng:28px;
+$text_md_sub_hdng:18px;
+$text_read:15px;
+$text_sml:13px;
+$txt-h2:24px;
+$txt-h4:20px;
+
+
+//Button Text Size
+$btn_text_sm:13px;
+$btn_text:14px;
+$btn_text_md:16px;
+$btn_text_lg:18px;
+
+
+// Spacings
+$spacing-none:0px;
+$spacing-md: 16px ; 
+$spacing-sm: 12px ;
+$spacing-lg: 24px ;
+
+$spacing-sm-x: 0 12px;
+$spacing-md-x: 0 16px; 
+$spacing-lg-x: 0 24px;
+
+
+$spacing-sm-y: 12px 0;
+$spacing-md-y: 16px 0; 
+$spacing-lg-y: 24px 0;
+
+
+// Border Radius
+$br-lg: 12px;
+$br-md: 8px;    
+$br-dflt: 6px;
+$br-sm: 4px;
+$br-ful: 60px;
+
+//Section
+$sctn-pdng-sm:16px 0;
+$sctn-pdng:24px 0;
+$sctn-pdng-md:32px 0;  
+$sctn-pdng-lg:40px 0;
+
+
+//widths
+$width-25: 25%;
+$width-33: 33.33%;  
+$width-50: 50%;
+$width-66: 66.66%;      
+$width-75: 75%;
+$width-100: 100%;
+
+
+
+// Buttons
+@mixin btn {   
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border-radius: $br-dflt;
+}
+
+.btn-lg {
+    @include btn;
+    padding: 8px 32px;    
+    font-size: $btn_text_lg;   
+}
+.btn-md {
+    @include btn;
+    padding: 6px 24px;    
+    font-size: $btn_text_md;   
+}
+.btn-sm {
+    @include btn;
+    padding: 4px 16px;    
+    font-size: $btn_text_sm;   
+}
+.btn-lnk{
+     @include btn;
+    font-weight: 500;  
+    padding: 6px 24px;    
+    cursor: pointer;
+    font-size: $btn_text_md;  
+}
+.strthdlnk{    
+    z-index: 1;
+}
+.strthdlnk:before{
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+
+

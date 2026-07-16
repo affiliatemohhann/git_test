@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "worthio/product-hero-block",
+	"version": "0.1.0",
+	"title": "Product Hero Block",
+	"category": "widgets",
+	"icon": "cover-image",
+	"description": "Dynamic product hero block synced with product schema fields.",
+	"example": {},
+	"attributes": {
+		"ctaText": {
+			"type": "string",
+			"default": "Check Price"
+		},
+		"ctaUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "worthio",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
+

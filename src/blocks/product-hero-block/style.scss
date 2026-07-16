@@ -1,0 +1,225 @@
+@use '../../scss/bootstrap.scss';
+@use '../../scss/wrt-styles.scss';
+
+.worthio-product-hero-block {
+	display: grid;
+	grid-template-columns: minmax(280px, 42%) minmax(0, 1fr);
+	gap: 28px;
+	padding: 24px;
+	border: 1px solid #e7eaf0;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 18px 40px rgba(17, 24, 39, 0.07);
+
+	.hero-gallery {
+		display: grid;
+		gap: 14px;
+	}
+
+	.hero-gallery-main {
+		position: relative;
+		overflow: hidden;
+		border-radius: 20px;
+		background:
+			radial-gradient(circle at top, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.92)),
+			linear-gradient(135deg, #f8fafc, #eef2ff);
+		border: 1px solid #edf1f7;
+		min-height: 380px;
+	}
+
+	.hero-slide {
+		aspect-ratio: 1 / 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		margin: 0;
+	}
+
+	.hero-slide--empty {
+		color: #64748b;
+		font-weight: 600;
+	}
+
+	.hero-slide img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		display: block;
+		border-radius: 16px;
+	}
+
+	.hero-gallery-nav {
+		position: absolute;
+		inset: auto 16px 16px auto;
+		display: flex;
+		gap: 10px;
+	}
+
+	.hero-gallery-arrow,
+	.hero-thumb {
+		border: 1px solid #d7deea;
+		background: #fff;
+		transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.hero-gallery-arrow {
+		width: 42px;
+		height: 42px;
+		border-radius: 999px;
+		font-size: 1.5rem;
+		line-height: 1;
+		color: #0f172a;
+		box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+	}
+
+	.hero-gallery-thumbs {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(68px, 1fr));
+		gap: 10px;
+	}
+
+	.hero-thumb {
+		padding: 6px;
+		border-radius: 14px;
+		overflow: hidden;
+	}
+
+	.hero-thumb img {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	.hero-thumb.is-active,
+	.hero-gallery-arrow:hover,
+	.hero-thumb:hover {
+		border-color: #2563eb;
+		transform: translateY(-1px);
+		box-shadow: 0 10px 25px rgba(37, 99, 235, 0.14);
+	}
+
+	.hero-content {
+		display: grid;
+		align-content: start;
+		gap: 18px;
+	}
+
+	.hero-kicker {
+		margin: 0;
+		font-size: 0.82rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #2563eb;
+	}
+
+	.hero-title {
+		margin: 0;
+		font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+		line-height: 1.1;
+		color: #0f172a;
+	}
+
+	.hero-price-panel {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 14px;
+	}
+
+	.hero-score-card,
+	.hero-price-card,
+	.hero-specs-card {
+		border: 1px solid #e7eaf0;
+		border-radius: 18px;
+		background: #f8fafc;
+	}
+
+	.hero-score-card,
+	.hero-price-card {
+		padding: 16px 18px;
+		display: grid;
+		gap: 6px;
+	}
+
+	.hero-card-label {
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: #64748b;
+	}
+
+	.hero-score-card strong,
+	.hero-price-card strong {
+		font-size: 1.25rem;
+		line-height: 1.2;
+		color: #0f172a;
+	}
+
+	.hero-specs-card {
+		padding: 8px 18px;
+	}
+
+	.hero-spec-row {
+		display: grid;
+		grid-template-columns: minmax(110px, 150px) minmax(0, 1fr);
+		gap: 16px;
+		padding: 13px 0;
+		border-bottom: 1px solid #e7eaf0;
+	}
+
+	.hero-spec-row:last-child {
+		border-bottom: 0;
+	}
+
+	.hero-spec-label {
+		font-weight: 700;
+		color: #334155;
+	}
+
+	.hero-spec-value {
+		color: #0f172a;
+	}
+
+	.hero-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.hero-cta {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 20px;
+		border-radius: 999px;
+		background: linear-gradient(135deg, #111827, #2563eb);
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+		box-shadow: 0 14px 30px rgba(37, 99, 235, 0.22);
+	}
+}
+
+@media (max-width: 768px) {
+	.worthio-product-hero-block {
+		grid-template-columns: 1fr;
+		padding: 18px;
+		gap: 20px;
+	}
+
+	.worthio-product-hero-block .hero-gallery-main {
+		min-height: 300px;
+	}
+
+	.worthio-product-hero-block .hero-price-panel {
+		grid-template-columns: 1fr;
+	}
+
+	.worthio-product-hero-block .hero-spec-row {
+		grid-template-columns: 1fr;
+		gap: 4px;
+	}
+}

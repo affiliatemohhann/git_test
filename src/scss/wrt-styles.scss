@@ -1,0 +1,14 @@
+@import './variables';
+
+.wrt-card{
+    background-color: $bg-white;
+    border-radius: $br-lg;
+}
+
+.cont-two-col-lr{
+    display: flex;
+    justify-content: space-between;
+}
+.txt-c-tst{
+    color:green;
+}

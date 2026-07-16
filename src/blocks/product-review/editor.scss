@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+// Products CPT Page
+
+.product-review-block {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+  
+}
+.editorial-score h3 {
+    font-size: 36px;
+    color: #e63946;
+}
+.sub-scores{
+	ul {
+		list-style: none;
+		
+		li {
+			padding-left:0 ;
+			color: #333;
+			font-weight: 500;
+		}
+	}
+}
+.pros-cons {
+    display: flex;
+    gap: 40px;
+}
+
+.pros {
+	ul {
+		li {
+			color: green;
+		}
+	}
+}
+.cons {
+	ul {
+		li {
+			color: red;
+		}
+	}
+}
+.worhtio-icon{
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.icon-green {
+	fill: green;
+	color: green;
+}
+
+
